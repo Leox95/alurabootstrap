@@ -141,13 +141,38 @@
         </div>
     </section>
     <form class="container">
-        <div class="form-group">
-          <label for="nome" class="formulario">Nome:</label>
-          <input type="text" class="form-control" id="nome" placeholder="nome">
-        </div>
-        <div class="form-group">
-            <label for="email" class="formulario">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Seu Email">
+            <div class="form-group">
+            <label for="nome" class="formulario">Nome:</label>
+            <input type="text" class="form-control" id="nome" placeholder="nome">
+            </div>
+            <div class="form-group">
+                <label for="email" class="formulario">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Seu Email">
+            </div>
+        <div class="grupo-radio">
+            <div class="radio">
+                <label>
+                    <input type="radio" name="tipo-pessoa" value="fisica" checked>
+                    Pessoa física
+                </label>
+            </div>
+
+            <div class="radio">
+                <label>
+                    <input type="radio" name="tipo-pessoa" value="juridica">
+                    Pessoa jurídica
+                </label>
+            </div>
+        </div><!--
+
+        --><select class="contato-select form-control" name="tipo-solicitacao">
+            <option value="" disabled selected>Tipo de solicitação</option>
+            <option value="casa">Casa</option>
+            <option value="mansao">Mansão</option>
+            <option value="castelo">Castelo</option>
+        </select>
+        <div class="botao-enviar">
+            <button type="button" class="btn btn-primary" type="submit">Enviar</button>
         </div>
     </form>
 
